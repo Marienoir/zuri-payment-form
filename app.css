@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: rgb(202, 198, 198);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(22, 22, 22);
+}
+.wrapper{
+    border: 1px solid white;
+    height: 585px;
+    margin: 20px;
+    width: 700px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+h2{
+    padding: 20px;
+    text-align: center;
+    color: purple;
+    background-color: rgb(224, 222, 222);
+}
+h4{
+    color: purple;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+form{
+    padding: 2px 20px;
+}
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+/* .input-box:nth-of-type(4){
+    /* width: 100%; 
+    padding: 20px 0px;
+} */
+i.fa.fa-user.icon {
+    position: relative;
+    top: 3px;
+    left:-5px;
+    color: white;
+    padding-top: 13px;
+}
+i.fa.fa-credit-card.icon {
+    position: relative;
+    top: 3px;
+    left:-6px;
+    color: white;
+    padding-top: 13px;
+    padding-left: 10px;
+}
+
+i.fa.fa-envelope{
+    position: relative;
+    top: 3px;
+    left: -4px;
+    color: white;
+    padding-top: 13px;
+    padding-right: 20px;
+}
+i.fa.fa-cc-visa,
+i.fa-cc-paypal {
+    padding: 10px;
+    background: white;
+}
+.fa-cc-visa::before,
+i.fa-cc-paypal::before {
+    content: "\f1f0";
+    padding-right: 10px;
+    color: purple;
+}
+
+input[type="text"],
+input[type="tel"]{
+    padding: 10px; 
+    width: 280px;
+}
+input[type="email"]{
+    padding: 10px;
+    width: 601px
+}
+input[class="dob"]{
+    width: 62px;
+}
+.fa{
+    background-color: purple;
+    padding: 10px 15px;
+}
+label{
+    padding: 30px;
+}
+label[for='bc1'],
+label[for='bc2']{
+    padding: 10px;
+}
+select {
+    width: 100px;
+    height: 30px;
+    background: rgb(230, 226, 226);
+    /* border-top: 0px; */
+    margin-bottom: 5px;
+}
+button {
+    background: purple;
+    height: 40px;
+    width: 659px;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid purple;
+}
+button:hover{
+    background-color:rgb(75, 16, 75);
+}
+@media only screen and (max-width:768px){
+    .wrapper {
+        width: 350px;
+        margin: 0;
+        height: 950px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .input-group {
+        display: block;
+        margin-top: 10px;
+    }
+    input[type='text'],
+    input[type='tel'] {
+        width: 240px;
+        margin-bottom: 10px;
+    }
+    input[type="email"] {
+        width: 239px;
+    }
+    i.fa.fa-envelope {
+        left: -5px;
+        padding-right: 12px;
+    }
+    button{
+        width: 290px;
+    }
+}
